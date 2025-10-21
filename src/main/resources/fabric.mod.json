@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "tutorialmod",
+  "version": "${version}",
+  "name": "Tutorial Mod",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tutorialmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "org.cibermo.tutorialmod.client.TutorialmodClient"
+    ],
+    "main": [
+      "org.cibermo.tutorialmod.Tutorialmod"
+    ]
+  },
+  "mixins": [
+    "tutorialmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
